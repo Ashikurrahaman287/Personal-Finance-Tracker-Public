@@ -1,0 +1,52 @@
+# Go Telegram Finance Tracker Bot
+
+This is a simple Telegram bot implemented in Go that helps users track their finances by recording transactions and providing summaries of their financial activity.
+
+## Features
+
+- Record transactions with types such as Debt and Credit.
+- View transactions and summaries for the last 30 days.
+- Generate and send a PDF report summarizing transactions and financial totals.
+
+## How to Use
+
+1. Start a chat with the bot by searching for it on Telegram.
+2. Use the following commands to interact with the bot:
+   - `/start`: Start the bot and receive a welcome message.
+   - `/Debt <amount>`: Record a debt transaction with the specified amount.
+   - `/Credit <amount>`: Record a credit transaction with the specified amount.
+   - `/Last30`: View transactions and financial summaries for the last 30 days.
+   - `/exit`: Exit the bot.
+
+3. The bot will respond with transaction confirmations and summaries based on your input.
+
+## Installation
+
+1. Clone or download this repository to your local machine.
+2. Install the required dependencies:
+   ```bash
+   go get -u github.com/signintech/gopdf
+   go get -u gopkg.in/tucnak/telebot.v2
+   ```
+3. Replace `"Bot Token"` in the `main()` function with your Telegram Bot Token.
+4. Build the project:
+   ```bash
+   go build finance_tracker_bot.go
+   ```
+5. Run the executable:
+   ```bash
+   ./finance_tracker_bot
+   ```
+
+## Dependencies
+
+- [gopdf](https://github.com/signintech/gopdf): A Go library for generating PDF documents.
+- [telebot](https://github.com/tucnak/telebot): A Telegram bot framework for Go.
+
+## Disclaimer
+
+This project is for educational purposes and should be used responsibly. It is not intended for handling sensitive financial data. Ensure proper security measures are in place when using this bot.
+
+---
+
+Feel free to customize this README file further to include any additional information or instructions as needed.
