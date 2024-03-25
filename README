@@ -46,7 +46,3 @@ This is a simple Telegram bot implemented in Go that helps users track their fin
 ## Disclaimer
 
 This project is for educational purposes and should be used responsibly. It is not intended for handling sensitive financial data. Ensure proper security measures are in place when using this bot.
-
----
-
-Feel free to customize this README file further to include any additional information or instructions as needed.
